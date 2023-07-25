@@ -6,26 +6,23 @@ interface Props {
     children: ReactNode
 }
 
-function ApplicationLayout({children}: Props) {
-  return (
-    <div
-        className="w-full h-screen overflow-hidden grid
-        grid-cols-1 grid-rows-[3.6rem_calc(100%-3.6rem)]"
-    >
+function ApplicationLayout({ children }: Props) {
+    return (
+        <div
+            className="w-full min-h-screen"
+        >
 
-        {/* navbar */}
-        <div className="">
+            {/* navbar */}
             <NavBar />
+
+
+            {/* main section */}
+            <div>
+                {children}
+            </div>
+
         </div>
-
-
-        {/* main section */}
-        <div className="bg-yellow-300 overflow-y-auto">
-            {children}
-        </div>
-
-    </div>
-  )
+    )
 }
 
 export default ApplicationLayout

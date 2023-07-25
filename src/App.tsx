@@ -4,6 +4,7 @@ import ApplicationLayout from "./layouts/ApplicationLayout";
 import { HomePage } from "./pages/Home";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { applicationRoutes } from "./routes";
 
 
 function App() {
@@ -28,13 +29,8 @@ function App() {
       <Routes>
 
         <Route
-          path="/"
+          path={applicationRoutes.home}
           element={<HomePage />}
-        />
-
-        <Route
-          path="about"
-          element={<div>About page</div>}
         />
 
       </Routes>

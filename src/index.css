@@ -1,3 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.base-padding {
+    @apply px-4 md:px-8;
+}
+
+.font-1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-btn {
+    @apply appearance-none text-sm text-slate-700 bg-[--primary-color] font-medium
+    tracking-wide rounded-md py-3 px-3.5 shadow-md shadow-black/10 active:scale-95 transition-transform
+    duration-300 cursor-pointer font-1;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
+}
+
+:root {
+    --primary-color: #FDC800;
+    --primary-color-90: rgba(253, 200, 0, 0.9);
+    --primary-color-80: rgba(253, 200, 0, 0.8);
+    --primary-color-70: rgba(253, 200, 0, 0.7);
+    --primary-color-60: rgba(253, 200, 0, 0.6);
+    --primary-color-50: rgba(253, 200, 0, 0.5);
+    --primary-color-40: rgba(253, 200, 0, 0.4);
+    --primary-color-30: rgba(253, 200, 0, 0.3);
+    --primary-color-20: rgba(253, 200, 0, 0.2);
+    --primary-color-10: rgba(253, 200, 0, 0.1);
+}
